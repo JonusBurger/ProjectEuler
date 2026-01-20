@@ -2,7 +2,9 @@
 using System.Numerics;
 
 Console.WriteLine("Hello, World!");
-evenFibos(4000000);
+PalindromeProduct();
+//PrimeFactor(600851475143);
+//evenFibos(4000000);
 //Multiplesof3or5(1000);
 //solveZero(764000);
 // Solve Problem 0
@@ -61,4 +63,80 @@ void evenFibos(int value)
     }
 
     Console.WriteLine($"Sum of all the even fibonacci Numbers that don´t exceed {value} is {sumEven}");
+}
+
+// Sovle Problem 3
+void PrimeFactor(long value)
+{
+    List<long> primeFactor = new List<long>();
+    long number = 2;
+    while (value != 1)
+    {
+        if (isPrime(number))
+        {
+            if (value % number == 0)
+            {
+                value = value / number;
+                primeFactor.Add(number);
+            }
+        }
+        number++;
+    }
+    Console.WriteLine("Resulting List: ");
+    foreach (long entry in primeFactor)
+    {
+        Console.Write($", {entry}");
+    }
+
+}
+bool isPrime(long value)
+{
+    if (value <= 2)
+    {
+        return false;
+    }
+    for (int i = 2; i < value / 2; i++)
+    {
+        if (value % i == 0)
+        {
+            return false;
+        }
+    }
+    return true;
+}
+
+// Solve Problem 4
+void PalindromeProduct()
+{
+    int firstFactor = 999;
+    int secondFactor = 999;
+    bool switchFactor = false;
+    string Palindrom = (firstFactor * secondFactor).ToString();
+    char[] charArray = Palindrom.ToCharArray();
+    Array.Reverse(charArray);
+    while (Palindrom != ReverseString(Palindrom))
+    {
+        if (switchFactor)
+        {
+            firstFactor--;
+            switchFactor = false;
+        }
+        else
+        {
+            secondFactor--;
+            switchFactor = true;
+        }
+            Palindrom = (firstFactor * secondFactor).ToString();
+    }
+
+    Console.WriteLine("The Largest Palindrom is " + Palindrom);
+    Console.WriteLine($"As First Factor {firstFactor} was used and for second factor {secondFactor}");
+}
+
+string ReverseString(string s)
+{
+    char[] chararray = s.ToCharArray();
+    Array.Reverse(chararray);
+
+    return new string(chararray);
 }
