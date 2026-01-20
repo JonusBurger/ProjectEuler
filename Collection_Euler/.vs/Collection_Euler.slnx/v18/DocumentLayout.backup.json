@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\jBerg\\source\\repos\\JonusBurger\\ProjectEuler\\Collection_Euler\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{71D74A67-A12B-4173-8816-0BBC46679636}|Collection_Euler\\Collection_Euler.csproj|c:\\users\\jberg\\source\\repos\\jonusburger\\projecteuler\\collection_euler\\collection_euler\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71D74A67-A12B-4173-8816-0BBC46679636}|Collection_Euler\\Collection_Euler.csproj|solutionrelative:collection_euler\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0E6C4529-6549-9A7E-36B4-5CB4CCA8BC9A}|Collection_Euler\\Collection_Euler.csproj|c:\\users\\jberg\\source\\repos\\jonusburger\\projecteuler\\collection_euler\\collection_euler\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E6C4529-6549-9A7E-36B4-5CB4CCA8BC9A}|Collection_Euler\\Collection_Euler.csproj|solutionrelative:collection_euler\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +14,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +28,7 @@
               "RelativeDocumentMoniker": "Collection_Euler\\Program.cs",
               "ToolTip": "C:\\Users\\jBerg\\source\\repos\\JonusBurger\\ProjectEuler\\Collection_Euler\\Collection_Euler\\Program.cs",
               "RelativeToolTip": "Collection_Euler\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-11T16:11:22.546Z",
               "EditorCaption": ""

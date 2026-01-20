@@ -1,0 +1,15 @@
+C:\Users\jBerg\source\repos\JonusBurger\ProjectEuler\Collection_Euler\Collection_Euler\bin\Debug\net10.0\Collection_Euler.exe
+C:\Users\jBerg\source\repos\JonusBurger\ProjectEuler\Collection_Euler\Collection_Euler\bin\Debug\net10.0\Collection_Euler.deps.json
+C:\Users\jBerg\source\repos\JonusBurger\ProjectEuler\Collection_Euler\Collection_Euler\bin\Debug\net10.0\Collection_Euler.runtimeconfig.json
+C:\Users\jBerg\source\repos\JonusBurger\ProjectEuler\Collection_Euler\Collection_Euler\bin\Debug\net10.0\Collection_Euler.dll
+C:\Users\jBerg\source\repos\JonusBurger\ProjectEuler\Collection_Euler\Collection_Euler\bin\Debug\net10.0\Collection_Euler.pdb
+C:\Users\jBerg\source\repos\JonusBurger\ProjectEuler\Collection_Euler\Collection_Euler\obj\Debug\net10.0\Collection_Euler.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jBerg\source\repos\JonusBurger\ProjectEuler\Collection_Euler\Collection_Euler\obj\Debug\net10.0\Collection_Euler.AssemblyInfoInputs.cache
+C:\Users\jBerg\source\repos\JonusBurger\ProjectEuler\Collection_Euler\Collection_Euler\obj\Debug\net10.0\Collection_Euler.AssemblyInfo.cs
+C:\Users\jBerg\source\repos\JonusBurger\ProjectEuler\Collection_Euler\Collection_Euler\obj\Debug\net10.0\Collection_Euler.csproj.CoreCompileInputs.cache
+C:\Users\jBerg\source\repos\JonusBurger\ProjectEuler\Collection_Euler\Collection_Euler\obj\Debug\net10.0\Collection_Euler.sourcelink.json
+C:\Users\jBerg\source\repos\JonusBurger\ProjectEuler\Collection_Euler\Collection_Euler\obj\Debug\net10.0\Collection_Euler.dll
+C:\Users\jBerg\source\repos\JonusBurger\ProjectEuler\Collection_Euler\Collection_Euler\obj\Debug\net10.0\refint\Collection_Euler.dll
+C:\Users\jBerg\source\repos\JonusBurger\ProjectEuler\Collection_Euler\Collection_Euler\obj\Debug\net10.0\Collection_Euler.pdb
+C:\Users\jBerg\source\repos\JonusBurger\ProjectEuler\Collection_Euler\Collection_Euler\obj\Debug\net10.0\Collection_Euler.genruntimeconfig.cache
+C:\Users\jBerg\source\repos\JonusBurger\ProjectEuler\Collection_Euler\Collection_Euler\obj\Debug\net10.0\ref\Collection_Euler.dll
