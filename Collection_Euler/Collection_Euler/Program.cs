@@ -2,7 +2,7 @@
 using System.Numerics;
 
 Console.WriteLine("Hello, World!");
-findLargestAdjacency();
+//findLargestAdjacency();
 //specificPrime(10001);
 // sumSquareBrute(100);
 // smallestNumber();
