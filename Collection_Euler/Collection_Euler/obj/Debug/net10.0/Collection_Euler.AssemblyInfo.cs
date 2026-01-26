@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Collection_Euler")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c12a972105a24f45a34c53698b610911c11b5d41")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c1ef8d68aa4a5c8bb83fca9e784b89c0e0f91ac3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Collection_Euler")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Collection_Euler")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
