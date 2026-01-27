@@ -2,7 +2,8 @@
 using System.Numerics;
 
 Console.WriteLine("Hello, World!");
-longestCollatzSequence();
+//LatticePaths(21);
+//longestCollatzSequence();
 //calcLargeSum();
 //long[,] testArray = new long[20, 20] {
 //{ 08, 02, 22, 97, 38, 15, 00, 40, 00, 75, 04, 05, 07, 78, 52, 12, 50, 77, 91, 08},
@@ -584,5 +585,36 @@ long longestCollatzSequenceRec(long value, long[] storage, long max)
     {
         return max + 1 + longestCollatzSequenceRec((value * 3 + 1), storage, max);
     }
+}
+// Problem 15
+void LatticePaths(int size)
+{
+    long[,] storage = new long[size, size];
+    Console.WriteLine("Result is: "+ LatticePathsRec([0, 0], [size - 1, size - 1], storage, size));
+
+}
+long LatticePathsRec(int[] position, int[] target, long[,] storage, int size)
+{
+    if (position[0] >= size)
+    {
+        return 0;
+    }
+    if (position[1] >= size)
+    {
+        return 0;
+    }
+    if (storage[position[0], position[1]] != 0)
+    {
+        return storage[position[0], position[1]];
+    }
+    if (position[0] == target[0] && position[1] == target[1])
+    {
+        return 1;
+    }
+
+    long rightPath = LatticePathsRec([position[0] + 1, position[1]], target, storage, size);
+    long leftPath = LatticePathsRec([position[0], position[1] + 1], target, storage, size);
+    storage[position[0], position[1]] = rightPath + leftPath;
+    return rightPath + leftPath;
 }
 
