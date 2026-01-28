@@ -2,6 +2,7 @@
 using System.Numerics;
 
 Console.WriteLine("Hello, World!");
+maximumSum();
 //LatticePaths(21);
 //longestCollatzSequence();
 //calcLargeSum();
@@ -617,4 +618,166 @@ long LatticePathsRec(int[] position, int[] target, long[,] storage, int size)
     storage[position[0], position[1]] = rightPath + leftPath;
     return rightPath + leftPath;
 }
-
+// Problem 17
+void NumberLetterCounts()
+{
+    int[] arrayLow = [3, 3, 5, 4, 4, 3, 5, 5, 4, 3, 6, 6, 8,8, 7,7,9,8,8];
+    int[] arrayTenth = [6, 6, 5, 5, 5, 7, 6, 6];
+    int result = 0;
+    for (int i = 1; i < 1000; i++)
+    {
+        int reducedI = i;
+        if (reducedI >= 100)
+        {
+            result += arrayLow[(reducedI / 100) - 1];
+            result += 7;
+            reducedI = reducedI % 100;
+            if (reducedI != 0)
+            {
+                result += 3;
+            } else
+            {
+                continue;
+            }
+        }
+        if (reducedI < 20)
+        {
+            result += arrayLow[reducedI - 1];
+        }
+        else if (reducedI >= 20)
+        {
+            int tenth = reducedI / 10;
+            result += arrayTenth[tenth - 2];
+            if (reducedI % 10 != 0)
+            {
+                result += arrayLow[(reducedI % 10) - 1];
+            }
+        }
+    }
+    result += 11;
+    Console.WriteLine("Total Value is: " + result);
+}
+// Problem 18
+void maximumSum()
+{
+    int[] line1 = [75];
+    int[] line2 = [95, 64];
+    int[] line3 = [17, 47, 82];
+    int[] line4 = [18, 35, 87, 10];
+    int[] line5 = [20, 04, 82, 47, 65];
+    int[] line6 = [19, 01, 23, 75, 03, 34];
+    int[] line7 = [88, 02, 77, 73, 07, 63, 67];
+    int[] line8 = [99, 65, 04, 28, 06, 16, 70, 92];
+    int[] line9 = [41, 41, 26, 56, 83, 40, 80, 70, 33];
+    int[] line10 = [41, 48, 72, 33, 47, 32, 37, 16, 94, 29];
+    int[] line11 = [53, 71, 44, 65, 25, 43, 91, 52, 97, 51, 14];
+    int[] line12 = [70, 11, 33, 28, 77, 73, 17, 78, 39, 68, 17, 57];
+    int[] line13 = [91, 71, 52, 38, 17, 14, 91, 43, 58, 50, 27, 29, 48];
+    int[] line14 = [63, 66, 04, 68, 89, 53, 67, 30, 73, 16, 69, 87, 40, 31];
+    int[] line15 = [04, 62, 98, 27, 23, 09, 70, 98, 73, 93, 38, 53, 60, 04, 23];
+    int[,] pyramid = new int[15, 15];
+    int j = 0;
+    for (int i = 0; i < line1.Length; i++)
+    {
+        pyramid[j, i] = line1[i];
+    }
+    j++;
+    for (int i = 0; i < line2.Length; i++)
+    {
+        pyramid[j, i] = line2[i];
+  
+    }
+    j++;
+    for (int i = 0; i < line3.Length; i++)
+    {
+        pyramid[j, i] = line3[i];
+        
+    }
+    j++;
+    for (int i = 0; i < line4.Length; i++)
+    {
+        pyramid[j, i] = line4[i];
+    }
+    j++;
+    for (int i = 0; i < line5.Length; i++)
+    {
+        pyramid[j, i] = line5[i];
+    }
+    j++;
+    for (int i = 0; i < line6.Length; i++)
+    {
+        pyramid[j, i] = line6[i];
+    }
+    j++;
+    for (int i = 0; i < line7.Length; i++)
+    {
+        pyramid[j, i] = line7[i];
+    }
+    j++;
+    for (int i = 0; i < line8.Length; i++)
+    {
+        pyramid[j, i] = line8[i];
+    }
+    j++;
+    for (int i = 0; i < line9.Length; i++)
+    {
+        pyramid[j, i] = line9[i];
+    }
+    j++;
+    for (int i = 0; i < line10.Length; i++)
+    {
+        pyramid[j, i] = line10[i];
+    }
+    j++;
+    for (int i = 0; i < line11.Length; i++)
+    {
+        pyramid[j, i] = line11[i];
+    }
+    j++;
+    for (int i = 0; i < line12.Length; i++)
+    {
+        pyramid[j, i] = line12[i];
+    }
+    j++;
+    for (int i = 0; i < line13.Length; i++)
+    {
+        pyramid[j, i] = line13[i];
+    }
+    j++;
+    for (int i = 0; i < line14.Length; i++)
+    {
+        pyramid[j, i] = line14[i];
+    }
+    j++;
+    for (int i = 0; i < line15.Length; i++)
+    {
+        pyramid[j, i] = line15[i];
+    }
+    int[,] storage = new int[15, 15];
+    int result = MaxPoints(0, 0);
+    int MaxPoints(int i, int j)
+    {
+        if (i >= pyramid.GetLength(0))
+        {
+            return 0;
+        }
+        if (pyramid[i,j] == 0)
+        {
+            return 0;
+        }
+        if (storage[i,j] != 0)
+        {
+            return storage[i, j];
+        }
+        int goDown = pyramid[i, j] + MaxPoints(i + 1, j);
+        int goLeft = pyramid[i, j] + MaxPoints(i + 1, j + 1);
+        if (goDown > goLeft)
+        {
+            storage[i, j] = goDown;
+            return goDown;
+        }
+        storage[i, j] = goLeft;
+        return goLeft;
+    }
+    Console.WriteLine("The Maximum path is " + result);
+}
